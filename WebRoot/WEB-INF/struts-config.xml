@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+  <form-beans >
+    <form-bean name="loginForm" type="com.yourcompany.struts.form.LoginForm" />
+    <form-bean name="registerForm" type="com.yourcompany.struts.form.RegisterForm" />
+    <form-bean name="qukuanForm" type="com.yourcompany.struts.form.QukuanForm" />
+    <form-bean name="cunkuanForm" type="com.yourcompany.struts.form.CunkuanForm" />
+    <form-bean name="cxmxForm" type="com.yourcompany.struts.form.CxmxForm" />
+    <form-bean name="zzhkForm" type="com.yourcompany.struts.form.ZzhkForm" />
+    <form-bean name="buyForm" type="com.yourcompany.struts.form.BuyForm" />
+    <form-bean name="managerloginForm" type="com.yourcompany.struts.form.ManagerloginForm" />
+    <form-bean name="searchmenuForm" type="com.yourcompany.struts.form.SearchmenuForm" />
+    <form-bean name="altercustomerForm" type="com.yourcompany.struts.form.AltercustomerForm" />
+    <form-bean name="alterForm" type="com.yourcompany.struts.form.AlterForm" />
+    <form-bean name="saleForm" type="com.yourcompany.struts.form.SaleForm" />
+    <form-bean name="altertzForm" type="com.yourcompany.struts.form.AltertzForm" />
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      attribute="loginForm"
+      input="/login.jsp"
+      name="loginForm"
+      path="/login"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      attribute="registerForm"
+    
+      name="registerForm"
+      path="/register"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      attribute="qukuanForm"
+      input="/qukuan.jsp"
+      name="qukuanForm"
+      path="/qukuan"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      attribute="cunkuanForm"
+      input="/cunkuan.jsp"
+      name="cunkuanForm"
+      path="/cunkuan"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      path="/logout"
+      type="com.yourcompany.struts.action.LogoutAction"
+      scope="request"
+      cancellable="true" />
+    <action
+      attribute="cxmxForm"
+      input="/cxmx.jsp"
+      name="cxmxForm"
+      path="/cxmx"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      attribute="zzhkForm"
+      input="/zzhk.jsp"
+      name="zzhkForm"
+      path="/zzhk"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      attribute="buyForm"
+      input="buy.jsp"
+      name="buyForm"
+      path="/buy"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      attribute="managerloginForm"
+      input="managerlogin.jsp"
+      name="managerloginForm"
+      path="/managerlogin"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      attribute="searchmenuForm"
+     
+      name="searchmenuForm"
+      path="/searchmenu"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      attribute="alterForm"
+      input="CRUDcustomer.jsp"
+      name="alterForm"
+      path="/alter"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      attribute="alterForm"
+   	  input="CRUDcustomer.jsp"
+      name="alterForm"
+      path="/add"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      attribute="saleForm"
+      input="sale.jsp"
+      name="saleForm"
+      path="/sale"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      attribute="alterForm"
+      name="alterForm"
+      path="/edit"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      attribute="altertzForm"
+      input="/CRUDtz.jsp"
+      name="altertzForm"
+      path="/altertz"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      attribute="altertzForm"
+      name="altertzForm"
+      path="/addtz"
+      scope="request"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      path="/apply"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    <action
+      path="/agree"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      scope="request"
+      cancellable="true" />
+     <action
+      path="/chat"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      scope="request"
+      cancellable="true" />
+    <action
+      path="/sendmessage"
+      type="org.springframework.web.struts.DelegatingActionProxy"
+      cancellable="true" />
+    
+    
+  </action-mappings>
+
+  <message-resources parameter="/WEB-INF.ApplicationResources"  />
+  
+  <plug-in className="org.springframework.web.struts.ContextLoaderPlugIn">
+		<set-property property="contextConfigLocation"
+			value="/WEB-INF/applicationContext.xml"/>
+	</plug-in>
+</struts-config>
+

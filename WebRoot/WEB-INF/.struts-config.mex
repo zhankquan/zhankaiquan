@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/login.do" location="-45,0" dimension="374,116" />
+  <StrutsActivity path="/register.do" location="480,0" dimension="394,116" />
+  <StrutsActivity path="/qukuan.do" location="-45,120" dimension="388,116" />
+  <StrutsActivity path="/cunkuan.do" location="0,255" dimension="395,116" />
+  <StrutsActivity path="/logout.do" location="495,150" dimension="386,116" />
+  <StrutsActivity path="/cxmx.do" location="555,300" dimension="373,116" />
+  <StrutsActivity path="/zzhk.do" location="0,375" dimension="366,116" />
+  <StrutsActivity path="/buy.do" location="50,550" dimension="359,116" />
+  <StrutsActivity path="/managerlogin.do" location="585,510" dimension="435,116" />
+  <StrutsActivity path="/searchmenu.do" location="50,750" dimension="423,116" />
+  <StrutsActivity path="/alter.do" location="900,720" dimension="369,116" />
+  <StrutsActivity path="/add.do" location="50,950" dimension="364,116" />
+  <StrutsActivity path="/sale.do" location="950,950" dimension="363,116" />
+  <StrutsActivity path="/edit.do" location="525,1065" dimension="361,116" />
+  <StrutsActivity path="/altertz.do" location="50,1150" dimension="382,116" />
+  <StrutsActivity path="/addtz.do" location="1250,1150" dimension="377,116" />
+  <StrutsActivity path="/apply.do" location="1250,350" dimension="458,116" />
+  <StrutsActivity path="/agree.do" location="50,1350" dimension="378,116" />
+  <StrutsActivity path="/chat.do" location="650,1350" dimension="366,116" />
+  <StrutsActivity path="/login.jsp" location="330,15" dimension="105,56" />
+  <StrutsActivity path="/qukuan.jsp" location="345,150" dimension="121,56" />
+  <StrutsActivity path="/cunkuan.jsp" location="390,315" dimension="128,56" />
+  <StrutsActivity path="/cxmx.jsp" location="930,315" dimension="106,56" />
+  <StrutsActivity path="/zzhk.jsp" location="375,420" dimension="99,56" />
+  <StrutsActivity path="buy.jsp" location="435,570" dimension="89,56" />
+  <StrutsActivity path="managerlogin.jsp" location="1050,525" dimension="163,56" />
+  <StrutsActivity path="CRUDcustomer.jsp" location="540,855" dimension="173,56" />
+  <StrutsActivity path="sale.jsp" location="1005,1125" dimension="90,56" />
+  <StrutsActivity path="/CRUDtz.jsp" location="480,1185" dimension="123,56" />
+  <StrutsActivity path="/register.jsp" location="870,15" dimension="125,56" />
+  <StrutsActivity path="searchmenu.jsp" location="650,750" dimension="150,56" />
+  <StrutsActivity path="" location="650,950" dimension="37,56" />
+  <StrutsActivity path="/sendmessage.do" location="1250,1350" dimension="434,116" />
+  <StrutsTransition id="sale.jsp,null,/sale.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1050,1125" />
+      <AbsolutePoint location="1050,1066" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="buy.jsp,null,/buy.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="435,608" />
+      <AbsolutePoint location="409,608" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/CRUDtz.jsp,null,/altertz.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="480,1208" />
+      <AbsolutePoint location="432,1208" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/qukuan.jsp,null,/qukuan.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="345,178" />
+      <AbsolutePoint location="343,178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cxmx.jsp,null,/cxmx.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="930,343" />
+      <AbsolutePoint location="928,343" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="managerlogin.jsp,null,/managerlogin.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1050,553" />
+      <AbsolutePoint location="1020,553" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cunkuan.jsp,null,/cunkuan.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="451,315" />
+      <AbsolutePoint location="451,285" />
+      <AbsolutePoint location="395,285" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.jsp,null,/login.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="330,43" />
+      <AbsolutePoint location="329,43" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="CRUDcustomer.jsp,null,/add.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="540,883" />
+      <AbsolutePoint location="232,883" />
+      <AbsolutePoint location="232,950" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/zzhk.jsp,null,/zzhk.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="375,448" />
+      <AbsolutePoint location="366,448" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="CRUDcustomer.jsp,null,/alter.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="713,883" />
+      <AbsolutePoint location="1084,883" />
+      <AbsolutePoint location="1084,836" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+
